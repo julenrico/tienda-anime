@@ -1,0 +1,91 @@
+/* Estilos comunes para ambas páginas */
+.cabecera {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.cabecera img {
+    width: 100px;
+    height: auto;
+}
+
+/* Estilos específicos para Tienda de Figuritas de Anime */
+.contenedor-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.categoria {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.categoria img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.categoria h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.categoria:hover {
+    background-color: #f0f0f0;
+}
+
+/* Estilos específicos para la página de productos */
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.producto {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.producto img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.btn-cesta {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-cesta:hover {
+    background-color: #45a049;
+}
